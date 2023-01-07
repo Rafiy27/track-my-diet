@@ -16,7 +16,18 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Home') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('today_foods')" :active="request()->routeIs('today_foods')">
+                        {{ __('Today Foods') }}
+                    </x-nav-link>
                 </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('foods_admin')" :active="request()->routeIs('foods_admin')">
+                        {{ __('Foods') }}
+                    </x-nav-link>
+                </div>
+
             </div>
 
             <!-- Settings Dropdown -->
