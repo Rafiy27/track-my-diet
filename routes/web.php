@@ -3,8 +3,9 @@
 use App\Http\Controllers\FoodController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\AdminAuthController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\TodayFoodController;
-
+use App\Http\Controllers\UserDietsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,9 +39,25 @@ Route::get('/', function () {
 //     });
 // });
 
-Route::get('/admin-dashboard', function () {
+
+Route::get('/admin-dashboard/food', [AdminController::class, 'foodAdmin'])->name('food');
+
+
+Route::get('/admin-dashboard/user', function () {
     return view('admin.auth.welcome_admin');
+})->name('user');
+
+Route::get('/admin-dashboard/food/create', function() {
+    return view('admin.create_foodAdmin');
 });
+
+Route::post('/admin-dashboard/food/create/submit', [AdminController::class, 'createFood_admin']);
+
+Route::get('/admin-dashboard/food/delete/{id}', [AdminController::class, 'delete']);
+
+Route::get('/admin-dashboard/food/edit/{id}', [AdminController::class, 'viewEdit']);
+
+Route::post('/admin-dashboard/food/edit/update', [AdminController::class, 'update']);
 
 Route::get('/dashboard', [FoodController::class, 'all'])->middleware(['auth', 'verified'])->name('dashboard');
 
@@ -55,6 +72,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/dashboard/food/{id}', [FoodController::class, 'single']);
 
 Route::get('/dashboard/search', [FoodController::class, 'search']);
+Route::get('/dashboard/saved', [FoodController::class, 'saved'])->name("saved");
 
 Route::get('/foods_admin/create', [FoodController::class, 'create']);
 
@@ -63,7 +81,11 @@ Route::get('/like/{id}', [FoodController::class, 'like']);
 Route::get('/save/{id}', [FoodController::class, 'save']);
 Route::get('/unsave/{id}', [FoodController::class, 'unsave']);
 
-Route::get('/user-diet', [UserDietController::class, 'all']);
+Route::get('/user-diets', [UserDietsController::class, 'showForm'])->name("user_diets");
+Route::get('/show-user-diets', [UserDietsController::class, 'show'])->name("show_user_diets");
+Route::post('/user-diets/save', [UserDietsController::class, 'save']);
+Route::get('/user-diets/edit', [UserDietsController::class, 'viewEdit']);
+Route::post('/user-diets/update', [UserDietsController::class, 'update']);
 
 // Route::get('/today-foods', function () {
 //     return view('today_foods');

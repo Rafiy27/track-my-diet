@@ -1,66 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# TrackMyDiet
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A web app that can track your diet for your better health.
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Tech Stack
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Features
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### User
+- SignUp
+- Login
+- Count needed calories
+- Search food's recipe
+- Like and save food
+- Track the food that has been eaten
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Admin
+- Add food
+- Edit food
+- Delete food
+## Screenshots
 
-## Laravel Sponsors
+### User Features 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![Screenshot (423)](https://user-images.githubusercontent.com/76164968/220580771-ed1803c9-2392-46d0-9ebd-697ff1e340b6.png)
 
-### Premium Partners
+![Screenshot (424)](https://user-images.githubusercontent.com/76164968/220580789-a0d1e7ad-dee7-4389-85e8-ee83a5d5b5f5.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![Screenshot (425)](https://user-images.githubusercontent.com/76164968/220580795-d3fcbbc3-e065-4128-8e11-e28b1815aae6.png)
 
-## Contributing
+![Screenshot (430)](https://user-images.githubusercontent.com/76164968/220580838-c85583f9-12cc-4f2e-8296-746c0acea2d3.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![Screenshot (431)](https://user-images.githubusercontent.com/76164968/220580931-6eab4f3a-41f0-48e4-8bf4-20537205215a.png)
 
-## Code of Conduct
+![Screenshot (435)](https://user-images.githubusercontent.com/76164968/220581009-f9001253-34bb-4986-a4f7-07c69c3d7632.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![Screenshot (440)](https://user-images.githubusercontent.com/76164968/220581035-00194145-45d5-4385-85b8-6ed5254a43be.png)
 
-## Security Vulnerabilities
+### Admin Features 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+![Screenshot (442)](https://user-images.githubusercontent.com/76164968/220581106-a4777534-2fd6-42b1-9bdb-e5173d4c4079.png)
 
-## License
+![Screenshot (443)](https://user-images.githubusercontent.com/76164968/220581102-5e651c10-a653-4950-8daa-f94b052733a3.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+## Installation
+
+1. Clone this repo
+
+```bash
+  git clone https://github.com/faqihmadani/track-my-diet.git
+  cd my-project
+```
+
+2. Install package using composer and npm
+
+```bash
+  composer install
+  npm install
+```
+
+3. Run migration and seeder
+```bash
+  php artisan migrate
+  php artisan migrate:refresh --seed
+```
+
+4. Run development server
+```bash
+  php artisan serve
+  npm run dev
+```
